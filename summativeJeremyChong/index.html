@@ -1,0 +1,87 @@
+<!-- 
+  Jeremy Chong
+  01/25/2022
+  Home Page
+  The following code is to construct the main page of my Summative project
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Summative - Jeremy Chong</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="roughSketches/index.html">ROUGH SKETCHES</a></li>
+      <li><a href="codeSnippets/index.html">CODE SNIPPETS</a></li>
+      <li><a href="newFunc/index.html">NEW FUNCTIONS & TEXT FILE</a></li>
+      <li><a href="help/index.html">HELP</a></li>
+      <li><a href="game/index.html">GAME</a></li>
+    </ul>
+    <div class="header">
+      <h1>The Mailman</h1>
+      <h4>By Jeremy Chong</h4>
+    </div>
+    <section class="section-1">
+      <h2>Premise of the Project</h2>
+      <p>
+        For this summative project, I plan to make a 2D top-down platformer, similar to the arcade game Frogger. The main objective of this game is to send mail to all of the houses by navigating the player to each home while avoiding obstacles such as cars. Once the player has successfully done this, the difficulty of the game will then increase. Once the player loses a certain amount of lives or runs out of time, the game will be over.
+      </p>
+    </section>
+    <section class="section-2">
+      <h2>Work Distribution</h2>
+      <img src="../images/avatar.png">
+      <p id="imgText">
+        - Creating and designing the website.
+        <br><br>
+        - Doing all of the rough work such as rough sketches and code snippets.
+        <br><br>
+        - Adding all of the assets such as sprites and images.
+        <br><br>
+        - Writing the game code, which includes the creation of all of the screens, logic and animations.
+        <br><br>
+        - Code testing and debugging.
+      </p>
+    </section>
+    <section class="section-1">
+      <h2>Possible Challenges</h2>
+      <p>
+        <b>For the string functions, </b>
+        I plan on checking the user's name to see if it is an appropriate length and edit it so the first letter is capitalized.
+        <br><br>
+        <b>For the arrays, </b>
+        I plan on creating multiple to store the level clear times and information about the obstacles and platforms such as the speed and position.
+        <br><br>
+        <b>For the sorting, </b>
+        I will incorporate it by sorting how fast the player has cleared the level from the shortest time to longest. This sorted array will then be displayed using jQuery as a board.
+      </p>
+    </section>
+    <section class="section-2">
+      <h2>Screens</h2>
+      <p>
+        For this game, I plan on making 4 screens:
+        <br><br>
+        <b>1. Start Screen - </b>
+        This screen will show the main title of the game and a small heading to tell the player to click a key to enter the game.
+        <br><br>
+        <b>2. Main Game Screen</b>
+        This screen will have the actual game such as the sprites and obstacles. On this screen, the player will be able to move the character and send mail. This screen will also be recycled for the later levels.
+        <br><br>
+        <b>3. Transition Screen</b>
+        This screen will transition from one level to another. It will show the player what level they are on and will increase the difficulty. 
+        <br><br>
+        <b>4. End Screen</b>
+        If the player loses all of their lives or runs out of time, they will be directed to this screen. This screen will show their score and a small game over message.
+      </p>
+    </section>
+    <section class="section-1">
+      <h2>Concerns</h2>
+      <p>
+        I think the biggest challenge for this project is creating the logic for the game such as the moving platforms and obstacles. This also includes the movement for the player and the sending the mail to the homes. Additionally since I do not have much experience with Phaser, trying to figure out the various methods that Phaser has and implementing them will take some time as well.
+      </p>
+    </section>
+  </body>
+</html>

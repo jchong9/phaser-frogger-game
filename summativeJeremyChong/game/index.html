@@ -1,0 +1,53 @@
+<!--
+  Jeremy Chong
+  01/25/2022
+  Game page
+  The following code displays the phaser game
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mailman Game</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.52.0/phaser.min.js" integrity="sha512-2wu8HKyxH3r65DZuWEdiov7+mBVti4Kfjg9WTXNP8qitejYSBn2S+Kgi4M3ctlnA9qTDU6hyTsiqpIfFhQBY0Q==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <a href="../index.html" id="returnLink">↵ RETURN TO HOME PAGE</a>
+    <div id="phaser-game"></div>
+    <div id="startup">
+      <div id="namePopup">
+        <h2>Before the game begins, enter your name!</h2>
+        <h3>(Must be 10 characters or less)</h3>
+        <input type="text" id="txtName">
+        <br>
+        <input type="button" value="Enter" id="btnSubmit">
+      </div>
+    </div>
+    <div id="timeBoard">
+      <label id="lblName">User's</label>
+      <h4>Fastest Clear Times</h4>
+      <span>1. </span>
+      <label id="lblTime1">0:00</label>
+      <br>
+      <br>
+      <span>2. </span>
+      <label id="lblTime2">0:00</label>
+      <br>
+      <br>
+      <span>3. </span>
+      <label id="lblTime3">0:00</label>
+      <br>
+      <br>
+      <span>4. </span>
+      <label id="lblTime4">0:00</label>
+      <br>
+      <br>
+      <span>5. </span>
+      <label id="lblTime5">0:00</label>
+    </div>
+  </body>
+</html>

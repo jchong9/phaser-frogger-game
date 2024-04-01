@@ -1,0 +1,160 @@
+/*
+  Jeremy Chong
+  01/22/2022
+  Stylesheet
+  The following code construct all of the styles for the summative website and game.
+*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: VT323, monospace;
+  background-color: bisque;
+}
+#phaser-game {
+  text-align: center;
+}
+#timeBoard {
+  background-color: #104730;
+  width: 15vw;
+  float: right;
+  margin: -35% 5% 5% 5%;
+  padding: 1.5vw;
+  font-size: 35px;
+  color: bisque;
+}
+#timeBoard h4 {
+  margin-top: -1%;
+}
+#lblName {
+  font-weight: bold;
+}
+#startup {
+  background-color: rgba(0, 0, 0, 0.404);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+#namePopup {
+  background-color: #104730;
+  color: bisque;
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  padding: 1.5%;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#namePopup h2, h3 {
+  font-weight: normal;
+}
+input {
+  font-family: VT323;
+  font-size: 25px;
+}
+#txtName {
+  padding: 1%;
+  margin-bottom: 4%;
+  width: 400px;
+}
+#btnSubmit {
+  padding: 1%;
+  width: 200px;
+}
+#btnSubmit:hover {
+  background-color: #2fbb81;
+}
+ul {
+  margin-top: -0.2%;
+  margin-bottom: -4%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.342);
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+}
+li {
+  float: left;
+  margin-right: 2%;
+}
+li a {
+  text-decoration: none;
+  font-size: 40px;
+  padding: 5px 5px 5px 10px;
+  color: white;
+}
+li a:hover {
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.header {
+  font-size: 50px;
+  background-color: #104730;
+  text-align: center;
+  color: bisque;
+  padding: 5%;
+}
+.header h1 {
+  font-weight: normal;
+  margin: 0;
+}
+h4 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+section {
+  padding: 2%;
+  font-size: 2vw;
+}
+section h2 {
+  font-weight: normal;
+  text-align: center;
+}
+.section-1 {
+  color: #574233;
+}
+.section-2 {
+  color: bisque;
+  background-color: #a67b5c;
+}
+#imgText {
+  margin-top: -1%;
+  width: 67%;
+  float: right;
+}
+table {
+  width: 100%;
+}
+td {
+  padding: 4%;
+  width: 50%;
+}
+table p {
+  font-size: 27px;
+}
+#textUnderImg h4 {
+  margin-top: -9%;
+}
+button {
+  font-family: VT323, monospace;
+  font-size: 30px;
+  color: #104730;
+}
+button:hover {
+  background-color: rgb(212, 212, 172);
+}
+#returnLink {
+  text-decoration: none;
+  font-size: 2.5vw;
+  color: #104730;
+  float: left;
+  margin-right: -40%;
+}
+#returnLink:hover {
+  color: #2fbb81;
+}

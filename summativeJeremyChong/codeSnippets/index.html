@@ -1,0 +1,100 @@
+<!-- 
+  Jeremy Chong
+  01/25/2022
+  Code Snippets Page
+  The following code is to construct the code snippets page of my Summative project
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Summative - Code Snippets</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../roughSketches/index.html">ROUGH SKETCHES</a></li>
+      <li><a href="index.html">CODE SNIPPETS</a></li>
+      <li><a href="../newFunc/index.html">NEW FUNCTIONS & TEXT FILE</a></li>
+      <li><a href="../help/index.html">HELP</a></li>
+      <li><a href="../game/index.html">GAME</a></li>
+    </ul>
+    <div class="header">
+      <h1>Code Snippets</h1>
+    </div>
+    <section class="section-1">
+      <h2>Global Variables</h2>
+      <img src="../images/variables.PNG" width="650">
+      <img src="../images/variables2.PNG" width="650">
+    </section>
+    <section class="section-2">
+      <h2>Functions Without Parameters</h2>
+      <img src="../images/function1.PNG" width="950">
+      <p>
+        This function has no parameters and no return value. It resets the player's position and places a skull image where they died. The player's number of lives is decreased and the text is updated. After 1.5 seconds, the skull image will then disappear.
+      </p>
+    </section>
+    <section class="section-1">
+      <h2>Functions With Parameters</h2>
+      <img src="../images/function2.PNG" width="950">
+      <p>
+        This function has parameters but no return value. The originalTime parameter is the timer set before the game started and finishedTime is the time the player finished the level. It then calculates how long the player took to clear the level and pushes that time into an array. That array is then sorted and the top 5 fastest times are displayed using jQuery.
+      </p>
+    </section>
+    <section class="section-2">
+      <h2>Functions Without Parameters & Return Value</h2>
+      <img src="../images/function3.PNG" width="950">
+      <p>
+        This function has no parameters and a return value. It checks if the player has successfully sent mail to all of the homes. If they have, it returns true otherwise it will return false.
+      </p>
+    </section>
+    <section class="section-1">
+      <h2>Functions With Parameters & Return Value</h2>
+      <img src="../images/function4.PNG" width="950">
+      <p>
+        This function has parameters and a return value. The currentTime parameter is the current game time in seconds. It then converts the time to minutes and seconds and returns the converted time.
+      </p>
+    </section>
+    <section class="section-2">
+      <h2>String Function #1</h2>
+      <img src="../images/stringFunction1.PNG" width="950">
+      <p>
+        This string function takes the first character of a string and capitalizes it. It then merges the first capitalized letter with the rest of the string.
+        <br><br>
+        This function utilizes 3 string functions, toUpperCase(), substring() and concat().
+      </p>
+    </section>
+    <section class="section-1">
+      <h2>String Function #2</h2>
+      <img src="../images/stringFunction2.PNG" width="950">
+      <p>
+        This string function checks if the string has 10 or less characters. If the string is over 10 characters, it will only take the first 10 characters and return it. Otherwise, it will return the original string.
+        <br><br>
+        This function utilizes 1 string function, substring().
+      </p>
+    </section>
+    <section class="section-2">
+      <h2>Array Example #1</h2>
+      <img src="../images/array1.PNG" width="950">
+      <p>
+        This array stores objects with information of the car obstacles such as their position, speed and delay they are sent out. 
+      </p>
+    </section>
+    <section class="section-1">
+      <h2>Array Example #2</h2>
+      <img src="../images/array2.PNG" width="950">
+      <p>
+        This array stores objects with information of the moving platforms such as their position and speed.
+      </p>
+    </section>
+    <section class="section-2">
+      <h2>Bubble Sorting</h2>
+      <img src="../images/bubbleSort.PNG" width="950">
+      <p>
+        The image above shows a bubble sort algorithm that can be used anywhere in the code. The array parameter stores an array then the sorting function checks the pairs within that array. This bubble sort function is primarily used in the displayTime function and sorts the array in ascending order so the fastest times are at the beginning of the array. 
+      </p>
+    </section>
+  </body>
+</html>

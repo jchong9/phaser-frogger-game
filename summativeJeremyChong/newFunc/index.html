@@ -1,0 +1,84 @@
+<!-- 
+  Jeremy Chong
+  01/25/2022
+  New functions Page
+  The following code is to construct the new functions page of my Summative project
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Summative - New Functions</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../roughSketches/index.html">ROUGH SKETCHES</a></li>
+      <li><a href="../codeSnippets/index.html">CODE SNIPPETS</a></li>
+      <li><a href="index.html">NEW FUNCTIONS & TEXT FILE</a></li>
+      <li><a href="../help/index.html">HELP</a></li>
+      <li><a href="../game/index.html">GAME</a></li>
+    </ul>
+    <div class="header">
+      <h1>New Functions</h1>
+      <button onclick="location.href ='code.txt'">
+        CLICK HERE FOR THE TEXT FILE
+      </button>
+    </div>
+    <section class="section-1">
+      <h2>forEach(function)</h2>
+      <img src="../images/forEach.PNG" width="900">
+      <p>
+        This JavaScript method calls a function for each element in the array. The function parameter is the function to be called for each element of the array. The method has an undefined return value. 
+        <br><br>
+        In my game, I used the forEach method to check each member of the obstacle group. If they were active and went off screen, the element would be deactivated and become invisible. Within the method, I used an anonymous arrow function as the callback function and the car parameter is the current element within the array.
+      </p>
+    </section>
+    <section class="section-2">
+      <h2>setTimeout(function, milliseconds)</h2>
+      <img src="../images/setTimeout.PNG" width="900">
+      <p>
+        This JavaScript method executes a function once after a number of milliseconds. The function parameter is the function to be called when the method is executed and the milliseconds parameter is the delay in milliseconds. The method returns an ID that can be used for another method called clearTimeout, which clears the timer in the setTimeout method.
+        <br><br>
+        In my game, I used the setTimeout method to reset the notMoving variable to true after 140 milliseconds using an anonymous arrow function. When the notMoving variable is set to false, the player is not allowed to move, which allows a grid-like movement pattern as the player cannot move smoothly. 
+      </p>
+    </section>
+    <section class="section-1">
+      <h2>getChildren()</h2>
+      <img src="../images/getChildren.PNG" width="900">
+      <p>
+        This Phaser function has no parameters and returns an array. The array contains all game objects within a Phaser group. 
+        <br><br>
+        In my game, I used the getChildren function to find the specific home the player has interacted with. This way, I could have animations play on the correct house image.
+      </p>
+    </section>
+    <section class="section-2">
+      <h2>get(x, y)</h2>
+      <img src="../images/get.PNG" width="900">
+      <p>
+        This Phaser function gets the first inactive member within a group and returns the member. The x and y parameters is where the member of the group will be placed. 
+        <br><br>
+        In my game, I used the get function to find an inactive car obstacle, which is an obstacle that has went off screen, and reuse it. It is then set to the starting position of the obstacle, which is off screen.
+      </p>
+    </section>
+    <section class="section-1">
+      <h2>incX(value)</h2>
+      <img src="../images/incX.PNG" width="900">
+      <p>
+        This Phaser function increases the x-position of every member of a group and returns the current game object. The value parameter is how many pixels will be added to the x-position.
+        <br><br>
+        In my game, I used the incX function to increase the x-position of all of the moving game objects such as the cars and logs. 
+      </p>
+    </section>
+    <section class="section-2">
+      <h2>setVelocityX(value)</h2>
+      <img src="../images/setVelocity.PNG" width="900">
+      <p>
+        This Phaser function sets the horizontal velocity of a game object and returns the current game object. The value parameter is how fast you want the velocity to be. Positive values will move the object to the right and negative values to the left.
+        <br><br>
+        In my game, I used the setVelocityX function to move the bird sprite to the right to show the player that their mail is being stolen. I used the setVelocityX function over other functions because it constantly moves the game object rather than moving it once.
+      </p>
+    </section>
+  </body>
