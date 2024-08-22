@@ -2,7 +2,8 @@
 A 2D top-down web game where users have to guide a mailman to deliver his parcels to residents while overcoming various obstacles.
 
 ## Game Preview
-<img width="299" alt="game-demo" src="https://github.com/user-attachments/assets/ffed4923-0b77-403b-b38d-2808e7a762f2">
+<img width="299" alt="game-demo" src="https://github.com/user-attachments/assets/ffed4923-0b77-403b-b38d-2808e7a762f2"/>
+
 The game can also be found [here](https://phaser-frogger-game.vercel.app/)
 
 ## Purpose
